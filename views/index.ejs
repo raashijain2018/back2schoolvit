@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/newnav.css">
+    <title>Back To School</title>
+    <link rel="stylesheet" type="text/css" href="css/gravitas.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+          <div class="container">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+  <a class="navbar-brand" href="/"><img class="backs" src="B2S_Logo.png"></a>
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="navbar-nav mr-auto">
+    <!-- <li class="nav-item active">
+      <a class="nav-link" href="/login" id="mathbee" style="color:white">MathBee<span class="sr-only">(current)</span></a>
+    </li> -->
+       <li class="nav-item active">
+      <a class="nav-link" href="/index" style="color:white">Login<span class="sr-only login">(current)</span></a>
+    </li>
+    <li class="nav-item active">
+      <a class="nav-link" href="/about" style="color:white">AboutUs<span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item active">
+      <a class="nav-link" onclick="scroll_contact()" type="button" style="color:white">ContactUs<span class="sr-only">(current)</span></a>
+    </li>
+      <a class="navbar-brand" href="/gravitas"><img class="gravi" src="graVITas20 Logo.png"></a>
+</ul>
+</div>
+</div>
+</nav>
+  <div class="carousel">
+    <%- include('carousel'); -%>
+</div>
+<div class="container">
+	<h1 id="head"><img class="img-fluid" src="B2S_Logo.png" alt="" style="width: 10rem;"></h1>
+	<p id="brief" class="lead" style="color:white;">BACK-2-SCHOOL is a fully integrated open platform for students from classes 3 to 12,  to show their IQ and explore their skills. The competition uses a combination of children's natural desire to compete and participate effectively to hone their skills in competitions like MATH BEE and SPELL BEE. The event goes on for two days and aims at nurturing mathematical and vocabulary skills among children in a challenging environment. It encourages children to participate, on equal basis, solely with the aim of familiarizing  them with the contest to achieve extraordinary levels of speed and accuracy with their skills.
+All the participants will be recognized with certificates and the top 3 students from each category will be rewarded with cash prizes. The best school gets honoration with a trophy.</p>
+</div>
+<br>
+<br>
+<div class="container cards">
+ <div class="row justify-content-between">
+   <div class="col-md-6 col-12 mb-md-0 mb-4 ">
+     <div class="yes">
+       <h3 class="pass">SPELL BEE</h3>
+        <h4 class="seven">CLASS 3-12</h4>
+        <form action="/spell_des"  method="POST">
+      <button type="submit" id="btn_spellbee" style="color:white;" class="btn btn-outline-dark but">Click Here!</button>
+       </form>
+  </div>
+   </div>
+      <div class="col-md-6 col-12">
+     <div class="yes">
+       <h3 class="pass">MATH BEE</h3>
+      <h4 class="seven">CLASS 7-12</h4>
+      <form action="/mathbee_des" method="POST">
+      <button type="submit" id="btn_mathbee" style="color:white;" class="btn btn-outline-dark but">Click Here!</button>
+      </form>
+
+    </div>
+     </div>
+   </div>
+ </div>
+
+</div>
+<div id="contact">
+  <%- include('footer'); -%>
+</div>
+<script>
+  var burger = document.getElementById("burger");
+var menu = document.getElementById("menu");
+
+burger.addEventListener("click", () => {
+$("#menu").slideToggle("medium");
+menu.classList.toggle("hidden");
+
+burger.classList.toggle('toggle');
+});
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>var contact=document.getElementById("contact");
+  function scroll_contact()
+  {contact.scrollIntoView({behavior: "smooth"});
+  }</script>
+
+
+<script>var contact=document.getElementById("contact");
+  function scroll_contact()
+  {contact.scrollIntoView({behavior: "smooth"});
+  }</script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>

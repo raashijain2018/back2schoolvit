@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="\css\login.css">
+    <link rel="stylesheet" href="\css\newnav.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<a class="navbar-brand" href="/"><img class="backs" src="B2S_Logo.png"></a>
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav mr-auto">
+  <li class="nav-item active">
+    <a class="nav-link" href="/event" id="mathbee" style="color:white">Login<span class="sr-only">(current)</span></a>
+  </li>
+  <li class="nav-item active">
+    <a class="nav-link" href="/about" style="color:white">AboutUs<span class="sr-only">(current)</span></a>
+  </li>
+  <li class="nav-item active">
+    <a class="nav-link" href="#" style="color:white">ContactUs<span class="sr-only">(current)</span></a>
+  </li>
+    <a class="navbar-brand" href="/gravitas"><img class="gravi" src="graVITas20 Logo.png"></a>
+</ul>
+</div>
+</div>
+</nav>
+ <div class="contain">
+    <div class="container3">
+        <img src="B2S_Logo.png" alt="2BS" class="img2">
+    </div>
+    <div class="container1">
+        <div class="login-box">
+          <form action="/event" method="POST">
+          <div class="textbox">
+            <i class="fas fa-user"></i>
+            <label for="email"></label>
+            <input type="email" name="username" placeholder="Username" required>
+          </div>
+
+        <div class="textbox">
+
+            <i class="fas fa-lock"></i>
+
+            <label for="password"></label>
+
+            <input type="password"name="password" placeholder="Password"required>
+
+          </div>
+
+          <div class="selectbox">
+
+          <select name="test" id="test" required>
+
+              <option>Select your test</option>
+
+              <option value="mathbee">Math-Bee</option>
+
+              <option value="spellbee">Spell-Bee</option>
+
+          </select>
+
+          </div>
+
+          <input type="submit" class="button" value="Login">
+
+          </form>
+
+        </div>
+
+
+    </div>
+
+    <div class="container2">
+
+        <img src="B2S_Logo.png" alt="2BS" class="img1">
+
+    </div>
+
+</div>
+
+<!-- <div id="contact">
+
+  <%- include('footer'); -%>
+
+</div> -->
+
+    <script>
+        var burger = document.getElementById("burger");
+var menu = document.getElementById("menu");
+
+burger.addEventListener("click", () => {
+  $("#menu").slideToggle("medium");
+  menu.classList.toggle("hidden");
+  burger.classList.toggle('toggle');
+});
+  </script>
+  <script>src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="\css\login_page.css">
+    <link rel="stylesheet" href="\css\loginfooter.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+          <div class="laptop">
+            <ul class="nav-links">
+                <li><a href="/"><img src="B2S_Logo.png" class="b2s-logo" /></a>
+                </li>
+              <li><a href="/index">Login</a> </li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/about">Contact Us</a> </li>
+                <li><a href="/gravitas">
+                    <img src="graVITas20 Logo.png" class="gra-logo" /></a>
+                </li>
+            </ul>
+          </div>
+          <div class="mobile">
+            <div class="mobile-nav">
+              <div id="mobile-gra-logo">
+                  <img src="graVITas20 Logo.png" class="gra-logo" />
+
+              </div>
+              <div class="burger" id="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+              </div>
+           </div>
+            <div class="menu hidden" id="menu">
+              <ul class="menu-links" id="menu-links">
+                <hr style="margin: -10px 0 0 0;">
+                <li><a href="/index">Login</a> </li><hr>
+                <li><a href="/about">About Us</a></li><hr>
+                <li><a href="/about" >Contact Us</a> </li><hr></ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+ <div class="container">
+    <div class="container3">
+        <img src="B2S_Logo.png" alt="2BS" class="img2 tilt">
+    </div>
+    <div class="container1">
+        <div class="login-box">
+            <form action="/login"method="POST">
+            <div class="textbox">
+              <i class="fas fa-user"></i>
+              <label for="username"></label>
+              <input type="text" placeholder="Username" name="username" id="username"required>
+            </div>
+            <div class="textbox">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" name="password" id="password"required>
+            </div>
+            <div class="selectbox">
+            <select name="test" id="test" required>
+                <option>Select your test</option>
+                <option value="mathbee">Math-Bee</option>
+                <option value="spellbee">Spell-Bee</option>
+            </select>
+            </div>
+            <input type="submit" class="btn" value="Login">
+            </form>
+        </div>
+
+    </div>
+    <div class="container2">
+        <img src="B2S_Logo.png" alt="2BS" class="img1">
+    </div>
+</div>
+
+    <script>
+        var burger = document.getElementById("burger");
+var menu = document.getElementById("menu");
+
+burger.addEventListener("click", () => {
+  $("#menu").slideToggle("medium");
+  menu.classList.toggle("hidden");
+
+  burger.classList.toggle('toggle');
+});
+    </script>
+
+
+
+    <!-- <footer class="footer">
+      <div class="cont">
+          <div class="row">
+
+              <div class="col-12 col-sm-6 footer-joinus">
+                  <span class="footer-joinus-text">Have something to post or suggest?</span>
+                  <a class="footer-joinus_button" href="">Mail us</a>
+              </div>
+              <div class="col-12 col-sm-6 align-self-center ">
+                  <div class="text-center">
+                      <a class="btn btn-social-icon btn-google" href="https://www.instagram.com/back2schoolvit/"><i class="fa fa-instagram fa-lg"></i></a>
+                      <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fas fa-phone"></i></a>
+                  </div>
+              </div>
+         </div>
+         <div class="row justify-content-center" style="margin-top: 10px; padding-left: 20px">
+              <div class="col-auto">
+                  <p>© Copyright 2020 Back 2 School</p>
+              </div>
+         </div>
+      </div>
+  </footer> -->
+</body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/tilt.min.js"></script>
+<script>
+  $(".tilt").tilt({
+    scale: 1.2,
+  });
+</script>
+</html>

@@ -1,0 +1,86 @@
+body{
+	background-image: url("/SPELL BEE.png");
+}
+#sidepic{
+	padding-top: 5rem;
+	width: 28rem;
+}
+.text{
+margin-top: 7rem;
+margin-left: 22rem;
+font-weight:800;
+font-size: 3rem;
+color: #d21404;
+}
+.categories{
+	margin-top: 3rem;
+	margin-left: 3rem;
+	font-size: 2rem;
+	color: black;
+}
+.description
+{
+
+	padding:0 5% 0 5%;
+}
+@media only screen and (max-width: 1080px)
+{
+	body{
+		padding-right: 0px;
+		margin-right: 0px;
+		overflow-x: hidden;
+	}
+	#sidepic{
+		width: 20rem;
+		padding-top: 3rem;
+		margin-left: 2rem;
+	}
+	.text{
+		margin-left: 7rem;
+		margin-top: 4rem;
+		font-weight: 700;
+		font-size: 2rem;
+}
+  .categories{
+  margin-top: 2rem;
+  margin-left: 1rem;
+  font-size: 1.4rem;
+  padding-right: 0rem;
+  padding-left: 0rem;
+  margin-right: 0rem;
+}
+.cat{
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}
+#cat3{
+  margin-left: 0rem;
+  padding-left: 0rem;
+  margin-top: 2rem;
+}
+#threeto{
+  margin-right: 1.5rem;
+  margin-left: 0rem;
+}
+#sixtoeight{
+  margin-right: 1.5rem;
+  margin-left: 0rem;
+}
+#nineto{
+  margin-right: 1rem;
+  margin-left: 0rem;
+}
+.marginsss{
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-left: -2px;
+}
+.mirinda{
+  margin-right: 0px;
+  padding-right: 0px;
+}
+.pads{
+  margin-right: 0px;
+  padding-right: 0px;
+}
+}
