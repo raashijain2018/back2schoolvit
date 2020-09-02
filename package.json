@@ -4,7 +4,7 @@
   "main": "app.js",
   "scripts": {
    "start": "node index.js",
-   "start": "SET PORT=8080"
+   "start": "SET PORT=5500"
   },
   "repository": {
     "type": "git",
@@ -29,4 +29,7 @@
   "devDependencies": {},
   "description": ""
 }
-
+ "engines": {
+  "node": "0.10.41",
+  "npm": "1.4.29"
+}
