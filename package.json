@@ -4,7 +4,6 @@
   "main": "app.js",
   "scripts": {
    "start": "node app.js",
-   "start": "SET PORT=5500"
   },
   "repository": {
     "type": "git",
