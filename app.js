@@ -90,7 +90,7 @@ app.use(passport.session());
 mongoose.connection.on("error", console.error.bind(console, "connection error:"));
 mongoose.connection.once("open", async function () {
   console.log("db connected");
-}
+})
 
 
   const userSchema = new mongoose.Schema({
