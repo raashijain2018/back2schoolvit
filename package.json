@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-   "start": "node index.js"
+   "start": "node index.js",
+   "start": "SET PORT=8080"
   },
   "repository": {
     "type": "git",
