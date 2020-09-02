@@ -87,8 +87,10 @@ app.use(passport.session());
  mongoose.set("useCreateIndex",true);
   mongoose.connect("mongodb+srv://admin:TQyZwytPusKaif48@cluster0.ngt53.mongodb.net/userDB?retryWrites=true&w=majority",{useNewUrlParser:true});
                   // mongodb://localhost:27017/userDB",{useNewUrlParser:true});
-
-
+mongoose.connection.on("error", console.error.bind(console, "connection error:"));
+mongoose.connection.once("open", async function () {
+  console.log("db connected");
+}
 
 
   const userSchema = new mongoose.Schema({
