@@ -85,7 +85,8 @@ app.use(passport.session());
   //mongoose.set("useUnifiedTopology",true);
  mongoose.set('useUnifiedTopology', true);
  mongoose.set("useCreateIndex",true);
-  mongoose.connect("mongodb://localhost:27017/userDB",{useNewUrlParser:true});
+  mongoose.connect("mongodb+srv://admin:TQyZwytPusKaif48@cluster0.ngt53.mongodb.net/userDB?retryWrites=true&w=majority",{useNewUrlParser:true});
+                  // mongodb://localhost:27017/userDB",{useNewUrlParser:true});
 
 
 
