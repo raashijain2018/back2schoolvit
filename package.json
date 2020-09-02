@@ -2,6 +2,9 @@
   "name": "back2schoolvit.github.io",
   "version": "1.0.0",
   "main": "app.js",
+   "engines": {
+  "node": "12.11.1",
+  },
   "scripts": {
    "start": "node index.js",
    "start": "SET PORT=5500"
@@ -29,7 +32,4 @@
   "devDependencies": {},
   "description": ""
 }
- "engines": {
-  "node": "0.10.41",
-  "npm": "1.4.29"
-}
+ 
